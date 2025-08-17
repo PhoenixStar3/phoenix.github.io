@@ -3,11 +3,11 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
+  base: "/phoenix.github.io/",   // 👈 add this line
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"), // <-- this tells vite @ = src
+      "@": path.resolve(__dirname, "./src"),
     },
   },
 });
-
